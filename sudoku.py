@@ -1,10 +1,12 @@
 def esMatrizCuadrada(sudoku):
+    assert isinstance(sudoku, list)
     for fila in sudoku:
         if len(fila) != len(sudoku):
             return False
     return True
 
 def sonElementosEnteros(sudoku):
+    assert isinstance(sudoku, list)
     for fila in sudoku:
         for columna in fila:
             if type(columna) != int:
@@ -12,6 +14,7 @@ def sonElementosEnteros(sudoku):
     return True
 
 def columnasValidas(sudoku):
+    assert isinstance(sudoku, list)
     for columna in range(len(sudoku)):
         numerosEnColumna = []
         for elemento in range(len(sudoku)):
@@ -22,6 +25,7 @@ def columnasValidas(sudoku):
     return True
 
 def filasValidas(sudoku):
+    assert isinstance(sudoku, list)
     for fila in sudoku:
         for indice in range(1, len(sudoku) + 1):
             if indice not in fila:
@@ -29,6 +33,7 @@ def filasValidas(sudoku):
     return True
 
 def checkSudoku(sudoku):
+    assert isinstance(sudoku, list)
     return (
         esMatrizCuadrada(sudoku)
         and sonElementosEnteros(sudoku)
