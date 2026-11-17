@@ -11,7 +11,6 @@ def sonElementosEnteros(sudoku):
                 return False
     return True
 
-
 def columnasValidas(sudoku):
     for columna in range(len(sudoku)):
         numerosEnColumna = []
@@ -20,9 +19,7 @@ def columnasValidas(sudoku):
         for numero in range(1, len(sudoku) + 1):
             if numero not in numerosEnColumna:
                 return False
-
-    return True  # Si pasa todas las validaciones, las columnas son correctas
-
+    return True
 
 def filasValidas(sudoku):
     for fila in sudoku:
@@ -31,7 +28,6 @@ def filasValidas(sudoku):
                 return False
     return True
 
-
 def checkSudoku(sudoku):
     return (
         esMatrizCuadrada(sudoku)
@@ -39,7 +35,6 @@ def checkSudoku(sudoku):
         and filasValidas(sudoku)
         and columnasValidas(sudoku)
     )
-
 
 correct = [[1, 2, 3], [2, 3, 1], [3, 1, 2]]
 
