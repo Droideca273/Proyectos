@@ -1,4 +1,4 @@
-def columnasValidas(sudoku):
+def areColumnsValid(sudoku):
     assert isinstance(sudoku, list)
     for columna in range(len(sudoku)):
         numerosEnColumna = []
@@ -18,4 +18,4 @@ if __name__ == "__main__":
         if attr.startswith("__"):
             pass
         else:
-            print(attr, " => ", columnasValidas(casosTest.__dict__[attr]))
+            print(attr, " => ", areColumnsValid(casosTest.__dict__[attr]))

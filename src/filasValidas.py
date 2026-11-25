@@ -1,4 +1,4 @@
-def filasValidas(sudoku):
+def areRowsValid(sudoku):
     assert isinstance(sudoku, list)
     for fila in sudoku:
         for indice in range(1, len(sudoku) + 1):
@@ -15,4 +15,4 @@ if __name__ == "__main__":
         if attr.startswith("__"):
             pass
         else:
-            print(attr, " => ", filasValidas(casosTest.__dict__[attr]))
+            print(attr, " => ", areRowsValid(casosTest.__dict__[attr]))

@@ -1,4 +1,4 @@
-def esMatrizCuadrada(sudoku):
+def isSquareMatrix(sudoku):
     assert isinstance(sudoku, list)
     for fila in sudoku:
         if len(fila) != len(sudoku):
@@ -15,4 +15,4 @@ if __name__ == "__main__":
         if attr.startswith("__"):
             pass
         else:
-            print(attr, " => ", esMatrizCuadrada(casosTest.__dict__[attr]))
+            print(attr, " => ", isSquareMatrix(casosTest.__dict__[attr]))

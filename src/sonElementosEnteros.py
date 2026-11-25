@@ -1,4 +1,4 @@
-def sonElementosEnteros(sudoku):
+def areElementsIntegers(sudoku):
     assert isinstance(sudoku, list)
     for fila in sudoku:
         for columna in fila:
@@ -15,4 +15,4 @@ if __name__ == "__main__":
         if attr.startswith("__"):
             pass
         else:
-            print(attr, " => ", sonElementosEnteros(casosTest.__dict__[attr]))
+            print(attr, " => ", areElementsIntegers(casosTest.__dict__[attr]))
