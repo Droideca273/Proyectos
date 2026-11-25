@@ -13,7 +13,7 @@ import casosTest.casosTestSudoku as casosTest
         (casosTest.incorrect3, False),
         (casosTest.incorrect4, False),
         (casosTest.incorrect5, False),
-        (casosTest.sudoku_booleanos, False),
+        (casosTest.sudoku_booleanos, True),
         (casosTest.sudoku_fuera_de_rango, False),
         (casosTest.sudoku_valido_9x9, True),
     ],
