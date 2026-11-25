@@ -1,17 +1,17 @@
 
-from src.areColumsValid import areColumnsValid
-from src.isSquareMatrix import isSquareMatrix
-from src.areRowsValid import areRowsValid
-from src.areElementsIntegers import areElementsIntegers
+from src.are_columns_valid import are_columns_valid
+from src.are_elements_integers import are_elements_integers
+from src.are_rows_valid import are_rows_valid
+from src.is_square_matrix import is_square_matrix
 
 
 def checkSudoku(sudoku):
     assert isinstance(sudoku, list)
     return (
-        isSquareMatrix(sudoku)
-        and areElementsIntegers(sudoku)
-        and areRowsValid(sudoku)
-        and areColumnsValid(sudoku)
+        is_square_matrix(sudoku)
+        and are_elements_integers(sudoku)
+        and are_rows_valid(sudoku)
+        and are_columns_valid(sudoku)
     )
 ### CASOS TEST ###
 

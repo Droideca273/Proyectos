@@ -1,18 +1,19 @@
-def isSquareMatrix(sudoku):
+def are_elements_integers(sudoku):
     assert isinstance(sudoku, list)
     for fila in sudoku:
-        if len(fila) != len(sudoku):
-            return False
+        for columna in fila:
+            if type(columna) != int:
+                return False
     return True
+
 
 ### CASOS TEST ###
 
 if __name__ == "__main__":
-
     import casosTest.casosTestSudoku as casosTest
 
     for attr in sorted(casosTest.__dict__):
         if attr.startswith("__"):
             pass
         else:
-            print(attr, " => ", isSquareMatrix(casosTest.__dict__[attr]))
+            print(attr, " => ", are_elements_integers(casosTest.__dict__[attr]))

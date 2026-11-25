@@ -1,4 +1,5 @@
-def areColumnsValid(sudoku):
+
+def are_columns_valid(sudoku):
     assert isinstance(sudoku, list)
     for columna in range(len(sudoku)):
         numerosEnColumna = []
@@ -8,9 +9,14 @@ def areColumnsValid(sudoku):
             if numero not in numerosEnColumna:
                 return False
     return True
+
+
 ### CASOS TEST ###
 
 if __name__ == "__main__":
+    import sys
+
+    sys.path.append("../")
 
     import casosTest.casosTestSudoku as casosTest
 
@@ -18,4 +24,4 @@ if __name__ == "__main__":
         if attr.startswith("__"):
             pass
         else:
-            print(attr, " => ", areColumnsValid(casosTest.__dict__[attr]))
+            print(attr, " => ", are_columns_valid(casosTest.__dict__[attr]))
