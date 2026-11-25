@@ -8,9 +8,6 @@ def sonElementosEnteros(sudoku):
 ### CASOS TEST ###
 
 if __name__ == "__main__":
-    import sys
-
-    sys.path.append("..")
 
     import casosTest.casosTestSudoku as casosTest
 
