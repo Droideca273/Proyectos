@@ -8,16 +8,14 @@ import casosTest.casosTestSudoku as casosTest
     "sudoku, sano",
     [
         (casosTest.correcto, True),
-        (casosTest.numero_repetido_fila_columna, False),
-        (casosTest.numero_repetido_columna, False),
-        (casosTest.numero_no_presente, False),
-        pytest.param(
-            casosTest.numero_fuera_del_rango, False, marks=pytest.mark.barricada
-        ),  # except
-        # (casosTest.caracteres, True),
-        # (casosTest.numeros_reales, True),
-        # (casosTest.irregular_fila, True),
-        # (casosTest.irregular_columna, True)
+        (casosTest.incorrect, False),
+        (casosTest.incorrect2, False),
+        (casosTest.incorrect3, False),
+        (casosTest.incorrect4, False),
+        (casosTest.incorrect5, False),
+        (casosTest.sudoku_booleanos, False),
+        (casosTest.sudoku_fuera_de_rango, False),
+        (casosTest.sudoku_valido_9x9, True),
     ],
 )
 def test_check_columnas(sudoku, sano):
