@@ -1,11 +1,9 @@
-import sys
 
-sys.path.append("..")
-
-from src.esMatrizCuadrada import esMatrizCuadrada
-from src.sonElementosEnteros import sonElementosEnteros
-from src.filasValidas import filasValidas
 from src.columnasValidas import columnasValidas
+from src.esMatrizCuadrada import esMatrizCuadrada
+from src.filasValidas import filasValidas
+from src.sonElementosEnteros import sonElementosEnteros
+
 
 def checkSudoku(sudoku):
     assert isinstance(sudoku, list)
