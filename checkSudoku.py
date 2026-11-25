@@ -1,8 +1,8 @@
 
-from src.columnasValidas import areColumnsValid
-from src.esMatrizCuadrada import isSquareMatrix
-from src.filasValidas import areRowsValid
-from src.sonElementosEnteros import areElementsIntegers
+from src.areColumsValid import areColumnsValid
+from src.isSquareMatrix import isSquareMatrix
+from src.areRowsValid import areRowsValid
+from src.areElementsIntegers import areElementsIntegers
 
 
 def checkSudoku(sudoku):
