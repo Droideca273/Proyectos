@@ -1,3 +1,4 @@
+
 def are_rows_valid(sudoku):
     assert isinstance(sudoku, list)
     for fila in sudoku:

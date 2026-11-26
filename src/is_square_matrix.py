@@ -1,3 +1,4 @@
+
 def is_square_matrix(sudoku):
     assert isinstance(sudoku, list)
     for fila in sudoku:

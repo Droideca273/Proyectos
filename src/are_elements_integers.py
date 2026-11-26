@@ -1,3 +1,4 @@
+
 def are_elements_integers(sudoku):
     assert isinstance(sudoku, list)
     for fila in sudoku:
