@@ -1,10 +1,15 @@
 
 def are_elements_integers(sudoku):
+
     assert isinstance(sudoku, list)
+    
     for fila in sudoku:
+
         for columna in fila:
             if type(columna) != int:
+
                 return False
+            
     return True
 
 

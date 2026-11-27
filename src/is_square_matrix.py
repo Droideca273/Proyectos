@@ -1,9 +1,14 @@
 
 def is_square_matrix(sudoku):
+
     assert isinstance(sudoku, list)
+
     for fila in sudoku:
+
         if len(fila) != len(sudoku):
+
             return False
+        
     return True
 
 
