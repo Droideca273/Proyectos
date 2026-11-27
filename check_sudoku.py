@@ -16,8 +16,11 @@ def checkSudoku(sudoku):
 ### CASOS TEST ###
 
 if __name__ == "__main__":
+    import sys
+        
+    sys.path.append("../")
 
-    import casosTest.casosTestSudoku as casosTest
+    import casosTest.casos_test_sudoku as casosTest
 
     for attr in sorted(casosTest.__dict__):
         if attr.startswith("__"):

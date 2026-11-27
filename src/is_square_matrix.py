@@ -10,7 +10,11 @@ def is_square_matrix(sudoku):
 ### CASOS TEST ###
 
 if __name__ == "__main__":
-    import casosTest.casosTestSudoku as casosTest
+    import sys
+    
+    sys.path.append("../")
+    
+    import casosTest.casos_test_sudoku as casosTest
 
     for attr in sorted(casosTest.__dict__):
         if attr.startswith("__"):
